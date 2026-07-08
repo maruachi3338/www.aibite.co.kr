@@ -457,12 +457,20 @@ ul { list-style: none; }
   border-radius: var(--radius-lg);
   overflow: hidden;
   position: relative;
-  background: linear-gradient(135deg, #0d1b3e 0%, #1a2a5e 45%, #2a3a7a 70%, #1a1060 100%);
+  background: #0d1b3e;
   box-shadow: var(--shadow-lg);
   display: flex; align-items: center; justify-content: center;
   flex-direction: column; gap: 12px;
 }
-.ab-hero-img-emoji { font-size: 72px; }
+.ab-hero-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: absolute;
+  top: 0; left: 0;
+}
+.ab-hero-img-emoji { display: none; }
 .ab-hero-img-mini-cards {
   display: flex; gap: 8px;
   position: absolute; bottom: 14px; left: 14px; right: 14px;
@@ -1309,7 +1317,7 @@ ul { list-style: none; }
       </div>
       <div class="ab-hero-right">
         <div class="ab-hero-img">
-          <div class="ab-hero-img-emoji">💰</div>
+          <img src="./images/thumb_01_a.png" alt="AI 수익 82% 썸네일" />
           <div class="ab-hero-img-mini-cards">
             <div class="ab-hero-img-mini">
               <div class="ab-hero-img-mini-tag">🏆 수익 1위</div>
